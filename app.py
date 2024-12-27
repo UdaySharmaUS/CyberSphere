@@ -221,7 +221,7 @@ st.sidebar.markdown('<div class="sidebar-header">Pick Your Analysis</div>', unsa
 # Add the radio button menu
 menu = st.sidebar.radio(
     "",
-    ["Threat Detection", "Traffic Analysis", "Anomaly Detection", "Bandwidth Utilization","IP Address Analysis" ,"Clustering", "About Me"],
+    ["Threat Detection", "Traffic Analysis", "Anomaly Detection", "Bandwidth Utilization","IP Address Analysis" ,"Clustering"],
     key="sidebar"
 )
 
@@ -638,53 +638,3 @@ elif menu == "Clustering":
     else:
         st.write("No data available. Please upload a file in Section 1.")
 
-elif menu == "About Me":
-    # Title of the Section
-    st.title("About Me")
-
-    # User Profile
-    st.markdown("""
-        <div class="profile-card">
-            <h2 class="profile-name">Abhilasha Choudhary</h2>
-            <p class="profile-description">I am a passionate Cyber Security Specialist, currently pursuing my studies at National Forensic Science University.</p>
-            <p class="profile-description">My primary interest lies in the field of cyber security, where I aim to contribute to enhancing digital safety and solving security challenges.</p>
-        </div>
-    """, unsafe_allow_html=True)
-
-    # Education Info
-    st.markdown("""
-        <div class="education-card">
-            <h3 class="education-title">Education</h3>
-            <p><strong>College:</strong> National Forensic Science University</p>
-            <p><strong>Specialization:</strong> Cyber Security</p>
-        </div>
-    """, unsafe_allow_html=True)
-
-    # About My Journey
-    st.markdown("""
-        <div class="journey-card">
-            <h3 class="journey-title">About My Journey</h3>
-            <p class="journey-description">
-                My journey in the world of cyber security began with a curiosity for how digital systems are secured and protected against evolving threats.
-                I am excited about exploring various aspects of cyber security such as threat detection, risk management, and digital forensics.
-                My goal is to continue learning and working on innovative solutions that can help protect sensitive data and critical infrastructures.
-            </p>
-        </div>
-    """, unsafe_allow_html=True)
-
-    # Add a personal image (optional)
-    #st.image("path_to_your_image.jpg", caption="Abhilasha Choudhary", use_column_width=True)
-
-    # Optional: Add contact information or social media links
-    st.markdown('<h2 class="connect-title">Connect with Me</h2>', unsafe_allow_html=True)
-    st.write("Feel free to reach out or connect on LinkedIn or other platforms.")
-
-    st.markdown(
-        '<div class="contact-card"><p class="contact-link"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abhilasha-choudhary-b71208195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Abhilasha Choudhary</a></p></div>',
-        unsafe_allow_html=True)
-    st.markdown(
-        '<div class="contact-card"><p class="contact-link"><strong>Email:</strong> <a href="mailto:adchaudhary27@gmail.com">adchaudhary27@gmail.com</a></p></div>',
-        unsafe_allow_html=True)
-    st.markdown(
-        '<div class="contact-card"><p class="contact-link"><strong>Blog:</strong> <a href="https://woorkk.wixsite.com/website" target="_blank">My work</a></p></div>',
-        unsafe_allow_html=True)
